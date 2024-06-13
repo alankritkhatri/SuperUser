@@ -4,7 +4,7 @@ import { menu } from "../../styles/data";
 const Menu = () => {
   return (
     <div className="menu">
-      {menu.map((item) => (
+      {menu.map((item,acc) => (
         <div className="item" key={item.id}>
           <span className="title">{item.title}</span>
           {item.listItems.map((listitem) => (
