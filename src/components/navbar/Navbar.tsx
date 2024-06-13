@@ -11,7 +11,7 @@ const Navbar = () => {
         </div>
       </Link>
       <div className="icons">
-        <img src="/search.sv alt="" />
+        <img src="/search.svg" alt="" />
         <img src="/app.svg" alt="" />
         <img src="/expand.svg" alt="" />
 
