@@ -10,12 +10,12 @@ const Menu = () => {
           {item.listItems.map((listitem) => (
             <Link className="listItem" to="/" key={listitem.id}>
               <img src={listitem.icon} alt="" />
-              <span className="listItemTitle">{listitem.title}</span>
+              <span className="listItemTitle">{listitem.title} 22</span>
             </Link>
           ))}
         </div>
       ))}
-    </div>
+    </div>c
   );
 };
 
