@@ -1,30 +1,20 @@
 import { Link } from "react-router-dom";
 import "./menu.css";
+import { menu } from "../../styles/data";
 const Menu = () => {
   return (
     <div className="menu">
-      <div className="item">
-        <span className="title">Main</span>
-        <Link className="listItem" to="/">
-          <img src="home.svg" alt="" />
-          <span className="listItemTitle">Home</span>
-        </Link>
-        <Link className="listItem" to="/profile">
-          <img src="profile.svg" alt="" />
-          <span className="listItemTitle">Profile</span>
-        </Link>
-      </div>
-      <div className="item">
-        <span className="title">Main</span>
-        <Link className="listItem" to="/">
-          <img src="home.svg" alt="" />
-          <span className="listItemTitle">Home</span>
-        </Link>
-        <Link className="listItem" to="/profile">
-          <img src="profile.svg" alt="" />
-          <span className="listItemTitle">Profile</span>
-        </Link>
-      </div>
+      {menu.map((item, acc) => (
+        <div className="item" key={item.id}>
+          <span className="title">{item.title}</span>
+          {item.listItems.map((listitem) => (
+            <Link className="listItem" to="/" key={listitem.id}>
+              <img src={listitem.icon} alt="" />
+              <span className="listItemTitle">{listitem.title}</span>
+            </Link>
+          ))}
+        </div>
+      ))}
     </div>
   );
 };
