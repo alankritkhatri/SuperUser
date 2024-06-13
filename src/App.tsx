@@ -4,12 +4,7 @@
 import Home from "../pages/home/Home";
 import Users from "../pages/users/users";
 import Products from "../pages/products/products";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Outlet,
-  Link,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Menu from "./components/menu/menu";
 import Footer from "./components/footer/footer";
