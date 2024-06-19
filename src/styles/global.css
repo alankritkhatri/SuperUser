@@ -28,7 +28,7 @@ a {
 .menuContainter {
   width: 250px;
   padding: 5px 20px;
-  border: 2px solid green;
+
   display: grid;
 }
 .contentContainer {
