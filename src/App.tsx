@@ -21,13 +21,12 @@ let analytics = AnalyticsBrowser.load({
 function App() {
   analytics.identify("USER_ID", {
     email: "a@example.com",
-    // Optional
     name: "ab",
     avatar: "https://avatar.com/asd809sdhoif9as10nc29.png",
     // Add anything else about the user here
   });
-  analytics.track("Signed In", {
-    browser: "chrome",
+  analytics.track("Signed Ins", {
+    browser: "chromee",
   });
 
   const Layout = () => {
