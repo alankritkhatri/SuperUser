@@ -10,7 +10,22 @@ import Menu from "./components/menu/menu";
 import Footer from "./components/footer/footer";
 import Login from "../pages/login/login";
 import "./styles/global.css";
+// Import June SDK:
+import { AnalyticsBrowser } from "@june-so/analytics-next";
+
+// Near the entrypoint of your app, instantiate AnalyticsBrowser:
+let analytics = AnalyticsBrowser.load({
+  writeKey: "gkoBrQQfSQxNA0aN",
+});
+
 function App() {
+  analytics.identify("USER_ID", {
+    email: "a@example.com",
+    // Optional
+    name: "ab",
+    avatar: "https://avatar.com/asd809sdhoif9as10nc29.png",
+    // Add anything else about the user here
+  });
   const Layout = () => {
     return (
       <div className="main">
