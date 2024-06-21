@@ -26,6 +26,10 @@ function App() {
     avatar: "https://avatar.com/asd809sdhoif9as10nc29.png",
     // Add anything else about the user here
   });
+  analytics.track("Signed In", {
+    browser: "chrome",
+  });
+
   const Layout = () => {
     return (
       <div className="main">
