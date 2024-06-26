@@ -9,6 +9,7 @@
   background-repeat: 10px;
   border: 2px solid var(--soft-bg);
   border-radius: 12px;
+  cursor: pointer;
 }
 .box1 {
   grid-row: span 3;
@@ -19,4 +20,7 @@
 .box7 {
   grid-column: span 2;
   grid-row: span 2;
+}
+.recharts-surface {
+  cursor: pointer !important;
 }

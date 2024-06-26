@@ -14,21 +14,24 @@ import "./styles/global.css";
 import { AnalyticsBrowser } from "@june-so/analytics-next";
 
 // Near the entrypoint of your app, instantiate AnalyticsBrowser:
-let analytics = AnalyticsBrowser.load({
-  writeKey: "gkoBrQQfSQxNA0aN",
-});
 
-function App() {
+window.onload = () => {
+  let analytics = AnalyticsBrowser.load({
+    writeKey: "gkoBrQQfSQxNA0aN",
+  });
+
   analytics.identify("USER_ID", {
     email: "a@example.com",
-    name: "ab",
+    name: "bhola",
     avatar: "https://avatar.com/asd809sdhoif9as10nc29.png",
     // Add anything else about the user here
   });
-  analytics.track("Signed Ins", {
+  analytics.track("user entered", {
     browser: "chromee",
   });
+};
 
+function App() {
   const Layout = () => {
     return (
       <div className="main">

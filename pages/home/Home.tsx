@@ -1,6 +1,15 @@
 import "./Home.css";
 import TopBox from "../../src/components/topBox/TopBox";
 import ChartBox from "../../src/components/ChartBox.ts/ChartBox";
+import {
+  chartBoxConversion,
+  chartBoxProduct,
+  chartBoxRevenue,
+  chartBoxUser,
+  barChartBoxRevenue,
+  barChartBoxVisit,
+} from "./data";
+import BarChartBox from "../../src/components/BarChartBox/BarChartBox";
 const Home = () => {
   return (
     <div className="home">
@@ -8,22 +17,28 @@ const Home = () => {
         <TopBox />
       </div>
       <div className="box box2">
-        <ChartBox />
+        <ChartBox {...chartBoxUser} />
       </div>
       <div className="box box3">
-        <ChartBox />
+        <ChartBox {...chartBoxProduct} />
       </div>
       <div className="box box4">Box 4</div>
       <div className="box box5">
-        <ChartBox />
+        <ChartBox {...chartBoxConversion} />
       </div>
       <div className="box box6">
         {" "}
-        <ChartBox />
+        <ChartBox {...chartBoxRevenue} />
       </div>
-      <div className="box box7">Box7</div>
-      <div className="box box8">Box8</div>
-      <div className="box box9">Box9</div>
+      <div className="box box7"></div>
+      <div className="box box8">
+        {" "}
+        <BarChartBox {...barChartBoxVisit} />
+      </div>
+      <div className="box box9">
+        {" "}
+        <BarChartBox {...barChartBoxRevenue} />
+      </div>
     </div>
   );
 };
