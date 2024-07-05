@@ -1,6 +1,3 @@
-// git remote add origin https://github.com/alankritkhatri/SuperAdmin.git
-// git branch -M main
-// git push -u origin main
 import Home from "../pages/home/Home";
 import Users from "../pages/users/users";
 import Products from "../pages/products/products";
@@ -10,26 +7,6 @@ import Menu from "./components/menu/menu";
 import Footer from "./components/footer/footer";
 import Login from "../pages/login/login";
 import "./styles/global.css";
-// Import June SDK:
-import { AnalyticsBrowser } from "@june-so/analytics-next";
-
-// Near the entrypoint of your app, instantiate AnalyticsBrowser:
-
-window.onload = () => {
-  let analytics = AnalyticsBrowser.load({
-    writeKey: "gkoBrQQfSQxNA0aN",
-  });
-
-  analytics.identify("USER_ID", {
-    email: "a@example.com",
-    name: "bhola",
-    avatar: "https://avatar.com/asd809sdhoif9as10nc29.png",
-    // Add anything else about the user here
-  });
-  analytics.track("user entered", {
-    browser: "chromee",
-  });
-};
 
 function App() {
   const Layout = () => {
