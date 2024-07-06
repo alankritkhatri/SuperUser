@@ -1,2 +1,9 @@
 .dataTable {
+  .dataGrid {
+    background: #2a3447;
+    padding: 20px;
+  }
+  .toolbarContainer {
+    flex-direction: row-reverse;
+  }
 }

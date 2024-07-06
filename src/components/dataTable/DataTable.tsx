@@ -1,8 +1,39 @@
-import { DataGrid, GridColDef } from "@mui/x-data-grid";
+import { DataGrid, GridColDef, GridToolbar } from "@mui/x-data-grid";
 import "./dataTable.css";
 const DataTable = () => {
   const columns: GridColDef<(typeof rows)[number]>[] = [
     { field: "id", headerName: "ID", width: 90 },
+    {
+      field: "profilePicture",
+      headerName: "Profile Picture",
+      width: 150,
+      editable: true,
+      renderCell: (params) => {
+        return <img src={params.row.img || "/noavatar.png"} alt="" />;
+      },
+    },
+    {
+      field: "actions",
+      headerName: "Actions",
+      width: 150,
+
+      editable: true,
+      renderCell: (_) => {
+        return (
+          <div className="action">
+            <div className="view">View</div>
+            <div className="delete">Delete</div>
+          </div>
+        );
+      },
+    },
+    {
+      field: "status",
+      headerName: "Status",
+      width: 100,
+      type: "boolean",
+    },
+
     {
       field: "firstName",
       headerName: "First name",
@@ -33,7 +64,7 @@ const DataTable = () => {
   ];
 
   const rows = [
-    { id: 1, lastName: "Snow", firstName: "Jon", age: 14 },
+    { id: 1, lastName: "Snow", firstName: "Jon", age: 14, status: true },
     { id: 2, lastName: "Lannister", firstName: "Cersei", age: 31 },
     { id: 3, lastName: "Lannister", firstName: "Jaime", age: 31 },
     { id: 4, lastName: "Stark", firstName: "Arya", age: 11 },
@@ -47,6 +78,7 @@ const DataTable = () => {
   return (
     <div className="dataTable">
       <DataGrid
+        className="dataGrid"
         rows={rows}
         columns={columns}
         initialState={{
@@ -56,9 +88,20 @@ const DataTable = () => {
             },
           },
         }}
+        slots={{ toolbar: GridToolbar }}
+        slotProps={{
+          toolbar: {
+            showQuickFilter: true,
+            quickFilterProps: {
+              debounceMs: 500,
+            },
+          },
+        }}
         pageSizeOptions={[5]}
         checkboxSelection
         disableRowSelectionOnClick
+        disableColumnFilter
+        disableColumnSelector
       />
     </div>
   );
