@@ -14,10 +14,10 @@ const columns: GridColDef<(typeof userRows)[number]>[] = [
     },
   },
   {
-    field: "actions",
+    field: "action",
     headerName: "Actions",
     width: 100,
-    renderCell: (_) => {
+    renderCell: () => {
       return (
         <div className="action">
           <div className="view">View</div>
@@ -68,8 +68,8 @@ const Users = () => {
       <div className="info">
         <h1>users</h1>
         <button>Add New Users</button>
-        <DataTable columns={columns} rows={userRows} />
       </div>
+      <DataTable slug="users" columns={columns} rows={userRows} />
     </div>
   );
 };
