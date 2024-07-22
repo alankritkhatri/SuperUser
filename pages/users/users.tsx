@@ -2,28 +2,17 @@ import { GridColDef } from "@mui/x-data-grid";
 import DataTable from "../../src/components/dataTable/DataTable";
 import "./users.css";
 import { userRows } from "../home/data";
-const columns: GridColDef<(typeof userRows)[number]>[] = [
+import Add from "../../src/components/add/Add";
+import { useState } from "react";
+const columns: GridColDef[] = [
   { field: "id", headerName: "ID", width: 90 },
   {
-    field: "profilePicture",
-    headerName: "Profile Picture",
+    field: "img",
+    headerName: "Avatar",
     width: 150,
     editable: true,
     renderCell: (params) => {
       return <img src={params.row.img || "/noavatar.png"} alt="" />;
-    },
-  },
-  {
-    field: "action",
-    headerName: "Actions",
-    width: 100,
-    renderCell: () => {
-      return (
-        <div className="action">
-          <div className="view">View</div>
-          <div className="delete">Delete</div>
-        </div>
-      );
     },
   },
   {
@@ -63,13 +52,15 @@ const columns: GridColDef<(typeof userRows)[number]>[] = [
 ];
 
 const Users = () => {
+  const [open, setOpen] = useState(false);
   return (
     <div className="users">
       <div className="info">
         <h1>users</h1>
-        <button>Add New Users</button>
+        <button onClick={() => setOpen(true)}>Add New User</button>
       </div>
       <DataTable slug="users" columns={columns} rows={userRows} />
+      {open && <Add slug="user" columns={columns} setOpen={setOpen} />}
     </div>
   );
 };
