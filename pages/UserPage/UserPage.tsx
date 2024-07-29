@@ -1,10 +1,11 @@
 import Single from "../../src/components/Single/Single";
-const Products = () => {
+
+const UserPage = () => {
   return (
-    <div className="product">
+    <div>
       <Single />
     </div>
   );
 };
 
-export default Products;
+export default UserPage;

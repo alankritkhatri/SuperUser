@@ -1,13 +1,14 @@
 import Home from "../pages/home/Home";
 import Users from "../pages/users/users";
-import Products from "../pages/products/products";
+import Products from "../pages/products/Products";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Menu from "./components/menu/menu";
 import Footer from "./components/footer/footer";
 import Login from "../pages/login/login";
 import "./styles/global.css";
-
+import Product from "../pages/product/Product";
+import UserPage from "../pages/UserPage/UserPage";
 function App() {
   const Layout = () => {
     return (
@@ -41,6 +42,14 @@ function App() {
         {
           path: "products",
           element: <Products />,
+        },
+        {
+          path: "users/:id",
+          element: <UserPage />,
+        },
+        {
+          path: "products/:id",
+          element: <Product />,
         },
       ],
     },
