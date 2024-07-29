@@ -9,7 +9,7 @@ import {
   YAxis,
 } from "recharts";
 import "../../styles/global.css";
-import { Tooltip } from "@mui/material";
+
 type Props = {
   id: number;
   img?: string;
@@ -58,7 +58,7 @@ const Single = (props: Props) => {
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" />
                 <YAxis />
-                <Tooltip />
+
                 <Legend />
                 {props.chart.dataKeys.map((datakey) => (
                   <Line
