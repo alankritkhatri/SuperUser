@@ -53,10 +53,10 @@ const Product = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="users">
+    <div className="products">
       <div className="info">
         <h1>Products</h1>
-        <button onClick={() => setOpen(true)}>Add New Products</button>
+        <button onClick={() => setOpen(true)}>Add New User</button>
       </div>
       <DataTable slug="products" columns={columns} rows={products} />
       {open && <Add slug="product" columns={columns} setOpen={setOpen} />}

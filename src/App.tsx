@@ -1,6 +1,6 @@
 import Home from "../pages/home/Home";
 import Users from "../pages/users/users";
-import Products from "../pages/products/Products";
+import Products from "../pages/products/ProductsPage";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Menu from "./components/menu/menu";
