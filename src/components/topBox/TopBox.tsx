@@ -1,4 +1,4 @@
-import { topDealUsers } from "../../../pages/home/data";
+import { topDealUsers } from "../../data";
 import "./topBox.css";
 const TopBox = () => {
   return (

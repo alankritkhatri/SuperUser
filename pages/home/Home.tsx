@@ -8,7 +8,7 @@ import {
   chartBoxUser,
   barChartBoxRevenue,
   barChartBoxVisit,
-} from "./data";
+} from "../../src/data";
 import BarChartBox from "../../src/components/BarChartBox/BarChartBox";
 const Home = () => {
   return (

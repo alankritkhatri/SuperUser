@@ -41,7 +41,7 @@ function App() {
         },
         {
           path: "products",
-          element: <Products />,
+          element: <Product />,
         },
         {
           path: "users/:id",
@@ -49,7 +49,7 @@ function App() {
         },
         {
           path: "products/:id",
-          element: <Product />,
+          element: <Products />,
         },
       ],
     },
