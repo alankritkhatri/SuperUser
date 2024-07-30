@@ -26,7 +26,7 @@ const Invoices = () => {
             <Button>{loading ? "Loading" : "Download "}</Button>
           )}
         </PDFDownloadLink>
-        <PDFGen companyName={companyName} />
+        <PDFGen />
       </div>
     </div>
   );

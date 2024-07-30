@@ -18,15 +18,12 @@ const Invoices = () => {
       </form>
       <div className="box box10">
         <h1 className="underline ">Invoice</h1>
-        <PDFDownloadLink
-          fileName="Invoice"
-          document={<PDFGen companyName={companyName} />}
-        >
+        <PDFDownloadLink fileName="Invoice" document={<PDFGen />}>
           {({ loading }) => (
             <Button>{loading ? "Loading" : "Download "}</Button>
           )}
         </PDFDownloadLink>
-        <PDFGen companyName={companyName} />
+        <PDFGen />
       </div>
     </div>
   );

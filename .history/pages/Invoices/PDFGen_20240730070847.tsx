@@ -1,8 +1,5 @@
 import { Page, Text, Document, StyleSheet, Image } from "@react-pdf/renderer";
 import imgg from "../../public/1330017.png";
-type Props = {
-  companyName: string;
-};
 const styles = StyleSheet.create({
   body: {
     paddingTop: 35,
@@ -40,12 +37,12 @@ const styles = StyleSheet.create({
   },
 });
 
-const PDFGen = (props: Props) => {
+const PDFGen = ({ companyName }) => {
   return (
     <Document>
       <Page style={styles.body}>
         <Text style={styles.header} fixed>
-          {props.companyName}
+          {companyName}
         </Text>
         <Image style={styles.image} src={imgg} />
         <Text style={styles.text} fixed>
