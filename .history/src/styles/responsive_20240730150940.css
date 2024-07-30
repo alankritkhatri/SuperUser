@@ -1,0 +1,17 @@
+var @media screen and (max-width: var(--sm)) {
+  @content;
+}
+@media screen and (max-width: var(--md)) {
+  @content;
+}
+@media screen and (max-width: var(--lg)) {
+  @content;
+}
+@media screen and (max-width: var(--xl)) {
+  @content;
+}
+@media screen and (max-width: var(--xxl)) {
+  @content;
+}
+
+@include;

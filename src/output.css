@@ -604,6 +604,10 @@ video {
   margin: 1rem;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .w-1 {
   width: 0.25rem;
 }
@@ -634,6 +638,10 @@ video {
 
 .w-36 {
   width: 9rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .border {

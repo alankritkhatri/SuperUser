@@ -1,0 +1,23 @@
+var(--sm, 480px;)
+ var( --md, 768px;)
+var( --lg, 1024px);
+  var(--xl, 1200px);
+  var(--xxl, 1400px);
+
+@media screen and (max-width: var(--sm)) {
+  @content;
+}
+@media screen and (max-width: var(--md)) {
+  @content;
+}
+@media screen and (max-width: var(--lg)) {
+  @content;
+}
+@media screen and (max-width: var(--xl)) {
+  @content;
+}
+@media screen and (max-width: var(--xxl)) {
+  @content;
+}
+
+@include;
