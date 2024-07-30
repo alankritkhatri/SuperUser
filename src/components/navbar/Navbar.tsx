@@ -4,19 +4,20 @@ import "./navbar.css";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <Link to="/">
-        <div className="logo">
-          <img src="logo.svg" alt="" />
+      <Link to="/home">
+        <div className="logo ">
+          <img
+            className="w-36"
+            src="/public/image-removebg-preview.png"
+            alt=""
+          />
           <span>Super Admin</span>
+          <span className="font-extralight">beta</span>
         </div>
       </Link>
       <div className="icons">
-        <img src="/search.svg" alt="" />
-        <img src="/app.svg" alt="" />
-        <img src="/expand.svg" alt="" />
-
         <div className="notifications">
-          <img src="notifications.svg" alt="" />
+          <img src="/public/notifications.svg " alt="" />
           <span>1</span>
         </div>
         <div className="user">
@@ -26,7 +27,12 @@ const Navbar = () => {
           />
           <span>Jane</span>
         </div>
-        <img src="settings.svg" alt="" />
+        <button>
+          <Link to="./home">Login</Link>
+          <Link className="border" to="/">
+            Logout
+          </Link>
+        </button>
       </div>
     </div>
   );

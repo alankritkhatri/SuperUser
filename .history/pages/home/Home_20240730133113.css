@@ -1,0 +1,33 @@
+.home {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(180px, auto);
+}
+.box {
+  padding: 20px;
+  background-repeat: 10px;
+  border: 2px solid var(--soft-bg);
+  border-radius: 12px;
+  cursor: pointer;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.118);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(5.1px);
+  border: 1px solid rgba(255, 255, 255, 0.93);
+}
+.box1 {
+  grid-row: span 3;
+}
+.box4 {
+  grid-row: span 3;
+}
+.box7 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.recharts-surface {
+  cursor: pointer !important;
+}

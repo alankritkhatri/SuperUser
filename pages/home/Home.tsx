@@ -10,6 +10,7 @@ import {
   barChartBoxVisit,
 } from "../../src/data";
 import BarChartBox from "../../src/components/BarChartBox/BarChartBox";
+
 const Home = () => {
   return (
     <div className="home">

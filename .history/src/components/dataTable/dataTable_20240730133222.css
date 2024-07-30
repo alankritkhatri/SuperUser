@@ -1,0 +1,26 @@
+.dataTable {
+  .dataGrid {
+    background: rgba(255, 255, 255, 0.118);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.707);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgba(255, 255, 255, 0.93);
+    padding: 20px;
+  }
+  img {
+    width: 40px;
+  }
+  .toolbarContainer {
+    flex-direction: row-reverse;
+  }
+}
+.action {
+  display: flex;
+  gap: 15px;
+  img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+}
