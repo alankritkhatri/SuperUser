@@ -1,0 +1,28 @@
+.landing-page {
+  height: 100vh;
+  display: flex;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+
+  /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=010101&c2=2985ff&gt=r&gd=dtt
+*/
+}
+.landing-text {
+  width: 70%;
+  margin: 200px auto;
+  h1 {
+    font-size: 92px;
+    font-weight: 900;
+    font-family: Inter;
+    text-align: center;
+  }
+}
+h1 span {
+  text-align: center;
+  font-size: 92px;
+  font-weight: 900;
+  font-family: Inter;
+  text-align: center;
+}
