@@ -1,0 +1,49 @@
+.containerr {
+  height: 150vh;
+  margin: auto;
+}
+.boxx {
+  height: 150vh;
+  margin: auto;
+  padding: 20px;
+  background-repeat: 10px;
+  border: 2px solid var(--soft-bg);
+  border-radius: 12px;
+  cursor: pointer;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.118);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(5.1px);
+  border: 1px solid rgba(255, 255, 255, 0.93);
+}
+input {
+  color: black;
+}
+.add-item {
+  background-color: rgba(228, 228, 228, 0.594);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+}
+.pdmg {
+  padding: 2px;
+  margin: 2px;
+}
+.igen {
+  font-size: 32px;
+  text-decoration: dashed;
+  text-align: center;
+}
+.pdfview {
+  width: 70%;
+  margin: auto;
+}
+.pdfview > * {
+  width: 70%;
+  margin: auto;
+}
+.download {
+  background-color: rgba(17, 255, 0, 0.404);
+  padding: 4px;
+}

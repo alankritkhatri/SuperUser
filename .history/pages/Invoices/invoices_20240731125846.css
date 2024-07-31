@@ -1,0 +1,14 @@
+.containerr {
+  height: 100vh;
+}
+.box {
+  height: 100vh;
+}
+input {
+  color: black;
+}
+.add-item {
+  background-color: rgba(228, 228, 228, 0.594);
+  color: black;
+  border: 1px solid black;
+}

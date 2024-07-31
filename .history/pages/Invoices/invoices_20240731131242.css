@@ -1,0 +1,37 @@
+.containerr {
+  height: 100vh;
+  margin: auto;
+}
+.box {
+  margin: auto;
+}
+input {
+  color: black;
+}
+.add-item {
+  background-color: rgba(228, 228, 228, 0.594);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+}
+.pdmg {
+  padding: 2px;
+  margin: 2px;
+}
+.igen {
+  font-size: 32px;
+  text-decoration: dashed;
+  text-align: center;
+}
+.pdfview {
+  width: 70%;
+  margin: auto;
+  height: 500px;
+}
+.pdfview > * {
+  width: 70%;
+  margin: auto;
+  height: 500px;
+}
+.download {
+  background-color: rgba(9, 255, 116, 0.404);
+}
