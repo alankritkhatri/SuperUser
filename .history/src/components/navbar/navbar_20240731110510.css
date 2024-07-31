@@ -1,0 +1,57 @@
+.navbar {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 10px;
+
+    img {
+      width: 120px;
+    }
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .user {
+      display: flex;
+      align-items: center;
+      margin: 0px 8px 0px 12px;
+      gap: 8px;
+      img {
+        border-radius: 50%;
+        width: 26px;
+        height: 26px;
+      }
+    }
+    .notifications {
+      display: flex;
+      position: relative;
+      align-items: center;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: red;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        position: absolute;
+        top: -12px;
+        right: -12px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .icons img {
+    /* width: 20px;/ */
+    /* height: 20px; */
+  }
+}

@@ -1,0 +1,168 @@
+:root {
+  --main-bg: #2a3447;
+  --soft-bg: #384256;
+  --dark-bg: #222b3c;
+  --main-color: white;
+  --soft-color: #ddd;
+  --dark-color: #2a3447;
+
+  @layer base {
+    :root {
+      --chart-1: 12 76% 61%;
+      --chart-2: 173 58% 39%;
+      --chart-3: 197 37% 24%;
+      --chart-4: 43 74% 66%;
+      --chart-5: 27 87% 67%;
+    }
+
+    .dark {
+      --chart-1: 220 70% 50%;
+      --chart-2: 160 60% 45%;
+      --chart-3: 30 80% 55%;
+      --chart-4: 280 65% 60%;
+      --chart-5: 340 75% 55%;
+    }
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.bg {
+  background: url("/mesh-820\ \(10\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: blur(4px);
+}
+.main {
+  font-family: "Inter", sans-serif;
+  position: relative;
+  color: var(--main-color);
+}
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.menuContainter {
+  height: fit-content;
+  display: grid;
+  margin: 0px auto;
+}
+.contentContainer {
+  width: 80%;
+  margin: auto;
+}
+
+/* RESPONSIVENESS */
+/* :root {
+  --sm: 480px;
+  --md: 768px;
+  --lg: 1024px;
+  --xl: 1200px;
+  --xxl: 1400px;
+}
+
+
+/* 1400 and below xxl*/
+@media only screen and (max-width: 1400px) {
+  .home {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* 1200 and below xl */
+@media only screen and (max-width: 1200px) {
+  .home {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} /* 1024 and below lg*/
+@media only screen and (max-width: 1024px) {
+  .listItemTitle,
+  .title {
+    display: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .home {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .box7 {
+    display: none;
+  }
+  .landing-text h1 {
+    font-size: 64px !important;
+  }
+}
+/* 768 and below md*/
+@media only screen and (max-width: 768px) {
+  .box7 {
+    display: none;
+  }
+}
+/* 480 and below sm*/
+@media screen and (max-width: 480px) {
+  .icons {
+    button {
+      background-color: rgba(251, 251, 251, 0.334);
+      border-radius: 6px;
+      padding: 6px;
+      border: 1px solid beige;
+      font-size: 14px;
+    }
+  }
+  .logo {
+    img {
+      width: 120px;
+      position: absolute;
+      /* top: 0px !important; */
+      left: -45px !important;
+    }
+    .superuser {
+      margin: 0px 0px 0px 40px !important;
+    }
+    .beta {
+      margin-left: 10px;
+    }
+  }
+  .landing-text h1 {
+    font-size: 48px !important;
+  }
+  .chartBox {
+    flex-direction: column;
+  }
+  .menuContainter,
+  .contentContainer {
+    padding: 0px !important;
+    margin: 3px !important;
+  }
+  .menu {
+    padding: 0px !important;
+  }
+  .container {
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .box {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    justify-content: flex-start;
+    gap: 5px;
+  }
+}
