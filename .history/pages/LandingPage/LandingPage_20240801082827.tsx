@@ -10,7 +10,7 @@ const LandingPage = () => {
       <Navbar />
       <div className="landing-text">
         <div className="copyline">
-          <h1>Your Last User,Analytics, Invoicing Dashboard</h1>
+          <h1>Your Last User, Analytics and Invoicing Dashboard</h1>
         </div>
         <Link to="/home">
           {" "}

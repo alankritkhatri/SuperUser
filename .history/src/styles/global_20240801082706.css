@@ -124,16 +124,14 @@ a {
 /* 768 and below md*/
 @media only screen and (max-width: 768px) {
   .landing-page {
-    position: static;
+    /* position: static; */
   }
   .landing-text {
     h1 {
       font-size: 48px !important;
     }
   }
-  .scnshot {
-    width: 100% !important;
-  }
+
   .activities {
     display: none !important;
   }
