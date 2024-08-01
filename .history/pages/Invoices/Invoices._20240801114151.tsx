@@ -85,8 +85,7 @@ const Invoices = () => {
       <div className="pdmg boxx">
         <h1 className="pdmg underline igen ">Invoice Generator</h1>
         <div className="toolTip">
-          Note:the add item and pdf preview box feature might be buggy. We are
-          working to fix it{" "}
+          Note:the add item and feature might be buggy. We are working to fix it{" "}
         </div>
         <h2>
           Enter the details then click on download to download the PDF.You can

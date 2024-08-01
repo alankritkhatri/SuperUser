@@ -19,7 +19,7 @@ const ChartBox = (props: Props) => {
           <span>{props.title}</span>
         </div>
         <h1>{props.number}</h1>
-        <Link style={{ color: props.color }} to="/home">
+        <Link style={{ color: props.color }} to="/">
           View All
         </Link>
       </div>
