@@ -38,6 +38,7 @@ input {
 .pdfview {
   width: 70%;
   margin: auto;
+  height: 100%;
 }
 .pdfview > * {
   width: 70%;

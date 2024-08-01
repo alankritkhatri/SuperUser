@@ -38,10 +38,12 @@ input {
 .pdfview {
   width: 70%;
   margin: auto;
+  height: 100vh;
 }
 .pdfview > * {
   width: 70%;
   margin: auto;
+  height: 100%;
 }
 .download {
   background-color: rgba(17, 255, 0, 0.404);
