@@ -1,8 +1,13 @@
 .navbar {
   width: 100%;
-  padding: 30px;
+  padding: 10px 30px;
+  justify-content: center;
   display: flex;
-  justify-content: space-between;
+  background-color: rgb(28, 28, 28);
+  width: 30%;
+  margin: auto;
+  border-radius: 20px;
+
   align-items: center;
   .logo {
     position: relative;

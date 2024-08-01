@@ -26,5 +26,6 @@
     text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(255, 255, 255);
+    -webkit-text-stroke: 4px rgba(7, 7, 255, 0.493);
   }
 }

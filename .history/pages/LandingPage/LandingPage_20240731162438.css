@@ -4,13 +4,7 @@
   justify-content: space-between;
   padding: 20px;
   color: rgb(255, 255, 255);
-  .footer {
-    position: fixed;
-    left: 0px;
-    bottom: 20px;
-    width: 100%;
-    text-align: center;
-  }
+
   /*
 * Created with https://www.css-gradient.com
 * Gradient link: https://www.css-gradient.com/?c1=010101&c2=2985ff&gt=r&gd=dtt
@@ -23,8 +17,13 @@
     font-size: 92px;
     font-weight: 900;
     font-family: Inter;
-    text-align: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(255, 255, 255);
+    text-align: center;
   }
+}
+.footer {
+  position: fixed;
+  left: 0px;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
 }

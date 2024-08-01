@@ -59,7 +59,9 @@ a {
   justify-content: space-between;
   margin: 40px 0px;
 }
-
+.main {
+  background-color: rgb(242, 255, 4);
+}
 .menuContainter {
   height: fit-content;
   display: grid;

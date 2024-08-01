@@ -1,8 +1,9 @@
 .navbar {
+  background: rgb(241, 237, 237);
   width: 100%;
-  padding: 30px;
+  margin: 30px;
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
   .logo {
     position: relative;

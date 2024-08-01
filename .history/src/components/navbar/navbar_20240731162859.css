@@ -2,7 +2,8 @@
   width: 100%;
   padding: 30px;
   display: flex;
-  justify-content: space-between;
+  background-color: aqua;
+
   align-items: center;
   .logo {
     position: relative;

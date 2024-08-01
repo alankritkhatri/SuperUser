@@ -7,8 +7,9 @@ const LandingPage = () => {
     <div className="landing-page ">
       <div className="bg"> </div>
       <Navbar />
-      <div className="landing-text ">
+      <div className="landing-text">
         <h1>Your Last User,Revenue and Invoicing Dashboard</h1>
+        <h2></h2>
       </div>
       <Footer />
     </div>
