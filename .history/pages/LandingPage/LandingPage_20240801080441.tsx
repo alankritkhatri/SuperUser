@@ -7,10 +7,8 @@ const LandingPage = () => {
     <div className="landing-page ">
       <div className="bg"> </div>
       <Navbar />
-      <div className="landing-text">
-        <div className="copyline">
-          <h1>Your Last User,Revenue and Invoicing Dashboard</h1>
-        </div>
+      <div className="landing-text flex-col justify-center">
+        <h1>Your Last User,Revenue and Invoicing Dashboard</h1>
         <img className="scnshot " src="/screenzy-1722425437701.png" alt="" />
       </div>
 

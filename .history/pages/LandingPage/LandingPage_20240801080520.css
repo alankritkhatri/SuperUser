@@ -17,13 +17,10 @@
 */
 }
 .landing-text {
-  width: 80%;
-  margin: auto;
+  width: 70%;
+  margin: 100px auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 100px;
   h1 {
     font-size: 92px;
     font-weight: 900;
@@ -31,12 +28,8 @@
     text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(255, 255, 255);
-    margin: auto;
-  }
-  .copyline {
-    width: 80%;
   }
 }
 .scnshot {
-  width: 80%;
+  width: 50%;
 }

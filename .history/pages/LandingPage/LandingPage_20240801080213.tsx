@@ -7,13 +7,9 @@ const LandingPage = () => {
     <div className="landing-page ">
       <div className="bg"> </div>
       <Navbar />
-      <div className="landing-text">
-        <div className="copyline">
-          <h1>Your Last User,Revenue and Invoicing Dashboard</h1>
-        </div>
-        <img className="scnshot " src="/screenzy-1722425437701.png" alt="" />
+      <div className="landing-text ">
+        <h1>Your Last User,Revenue and Invoicing Dashboard</h1>
       </div>
-
       <Footer />
     </div>
   );
