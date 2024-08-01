@@ -1,7 +1,6 @@
 import "./LandingPage.css";
 import Navbar from "../../src/components/navbar/Navbar";
 import Footer from "../../src/components/footer/footer";
-import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
@@ -10,12 +9,9 @@ const LandingPage = () => {
       <Navbar />
       <div className="landing-text">
         <div className="copyline">
+          <button>Try Now</button>
           <h1>Your Last User,Revenue and Invoicing Dashboard</h1>
         </div>
-        <Link to="/home">
-          {" "}
-          <button>Try Now</button>
-        </Link>
         <img className="scnshot " src="/screenzy-1722425437701.png" alt="" />
       </div>
 

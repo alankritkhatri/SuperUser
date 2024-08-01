@@ -12,10 +12,7 @@ const LandingPage = () => {
         <div className="copyline">
           <h1>Your Last User,Revenue and Invoicing Dashboard</h1>
         </div>
-        <Link to="/home">
-          {" "}
-          <button>Try Now</button>
-        </Link>
+        <Link to="/home"></Link>
         <img className="scnshot " src="/screenzy-1722425437701.png" alt="" />
       </div>
 

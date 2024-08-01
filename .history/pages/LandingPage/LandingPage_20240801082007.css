@@ -22,12 +22,12 @@
 }
 .landing-text {
   width: 80%;
-  margin: 10px auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 100px;
   h1 {
     font-size: 72px;
     font-weight: 900;
@@ -41,11 +41,11 @@
     width: 80%;
   }
   button {
-    border: 1px solid rgb(0, 0, 0);
-    background-color: rgba(249, 249, 249, 0.279);
+    border: 1px solid white;
+    background-color: rgba(132, 255, 138, 0.279);
     padding: 12px 50px;
     border-radius: 4px;
-    font-weight: 700;
+    text-shadow: 1px red;
   }
 }
 .scnshot {

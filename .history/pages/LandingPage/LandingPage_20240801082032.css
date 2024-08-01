@@ -22,12 +22,12 @@
 }
 .landing-text {
   width: 80%;
-  margin: 10px auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 100px;
   h1 {
     font-size: 72px;
     font-weight: 900;

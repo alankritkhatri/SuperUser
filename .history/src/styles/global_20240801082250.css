@@ -91,9 +91,6 @@ a {
 }
 /* 1200 and below xl */
 @media only screen and (max-width: 1200px) {
-  .copyline h1 {
-    text-align: center !important;
-  }
   .single {
     flex-direction: column;
   }

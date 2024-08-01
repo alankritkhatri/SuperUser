@@ -91,9 +91,6 @@ a {
 }
 /* 1200 and below xl */
 @media only screen and (max-width: 1200px) {
-  .copyline h1 {
-    text-align: center !important;
-  }
   .single {
     flex-direction: column;
   }
@@ -108,24 +105,15 @@ a {
   }
 }
 @media only screen and (max-width: 900px) {
-  .landing-page {
-    position: static !important;
-  }
   .home {
     grid-template-columns: repeat(1, 1fr);
   }
   .box7 {
     display: none;
   }
-  .landing-text h1 {
-    font-size: 64px !important;
-  }
 }
 /* 768 and below md*/
 @media only screen and (max-width: 768px) {
-  .landing-page {
-    position: static;
-  }
   .landing-text {
     h1 {
       font-size: 48px !important;
@@ -145,6 +133,7 @@ a {
 /* 480 and below sm*/
 @media screen and (max-width: 480px) {
   .landing-text {
+    margin: 20px !important;
     h1 {
       font-size: 24px !important;
     }
@@ -173,7 +162,7 @@ a {
     }
   }
   .landing-text h1 {
-    font-size: 32px !important;
+    font-size: 48px !important;
   }
   .chartBox {
     flex-direction: column;
