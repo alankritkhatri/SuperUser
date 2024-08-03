@@ -126,6 +126,7 @@ const Invoices = () => {
         <div className="pdmg invoice-details pdmg">
           <form action="">
             <div className="flex">
+              <h1></h1>
               <h1>Invoice Number : </h1>
               <input
                 className="text-black"

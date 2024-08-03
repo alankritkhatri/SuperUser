@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background: url("/mesh-820\ \(10\).png");
+  filter: blur(4px);
+}
 :root {
   --main-bg: #2a3447;
   --soft-bg: #384256;
@@ -35,7 +39,6 @@ a {
   color: inherit;
 }
 .bg {
-  background: url("/mesh-820\ \(10\).png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

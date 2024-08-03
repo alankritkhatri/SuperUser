@@ -322,8 +322,8 @@ const Invoices = () => {
             placeholder="Enter Tnc"
           />
         </div>
-        <h1 style={{ textAlign: "center" }}>PDF Preview Box</h1>
         <div className="pdfview">
+          <h1 style={{ textAlign: "center" }}>PDF Preview Box</h1>
           <PDFViewer>
             <PDFGen
               companyName={companyName}
