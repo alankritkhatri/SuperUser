@@ -6,11 +6,10 @@
 html{
   background: url("/public/mesh-820\ \(1\).png");
   min-height: 100vh;
-  background-size: cover;
+    background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-
 }
 :root {
   --main-bg: #2a3447;

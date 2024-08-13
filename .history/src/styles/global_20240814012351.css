@@ -3,15 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
-  background: url("/public/mesh-820\ \(1\).png");
-  min-height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-
-}
 :root {
   --main-bg: #2a3447;
   --soft-bg: #384256;
@@ -44,10 +35,13 @@ a {
   color: inherit;
 }
 .bg {
- 
-
+  background: url("/mesh-820\ \(10\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   position: absolute;
- 
+  min-height: 100vh;
   top: 0;
   left: 0;
   right: 0;

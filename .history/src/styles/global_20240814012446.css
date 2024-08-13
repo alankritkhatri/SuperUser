@@ -4,13 +4,8 @@
   box-sizing: border-box;
 }
 html{
-  background: url("/public/mesh-820\ \(1\).png");
+  background: url("/mesh-820\ \(10\).png");
   min-height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-
 }
 :root {
   --main-bg: #2a3447;
@@ -45,7 +40,10 @@ a {
 }
 .bg {
  
-
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   position: absolute;
  
   top: 0;

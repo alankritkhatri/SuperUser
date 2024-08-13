@@ -28,47 +28,48 @@ const Layout = () => {
     </div>
   );
 };
-const router = createBrowserRouter([
-  {
-    path: "/home",
-    element: <Layout />,
-    children: [
-      {
-        path: "/home",
-        element: <Home />,
-      },
-      {
-        path: "users",
-        element: <Users />,
-      },
-      {
-        path: "products",
-        element: <Product />,
-      },
-      {
-        path: "users/:id",
-        element: <UserPage />,
-      },
-      {
-        path: "products/:id",
-        element: <ProductsPage />,
-      },
-      {
-        path: "invoices",
-        element: <Invoices />,
-      },
-    ],
-  },
-  {
-    path: "login",
-    element: <Login />,
-  },
-  {
-    path: "/",
-    element: <LandingPage />,
-  },
-]);
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/home",
+      element: <Layout />,
+      children: [
+        {
+          path: "/home",
+          element: <Home />,
+        },
+        {
+          path: "users",
+          element: <Users />,
+        },
+        {
+          path: "products",
+          element: <Product />,
+        },
+        {
+          path: "users/:id",
+          element: <UserPage />,
+        },
+        {
+          path: "products/:id",
+          element: <ProductsPage />,
+        },
+        {
+          path: "invoices",
+          element: <Invoices />,
+        },
+      ],
+    },
+    {
+      path: "login",
+      element: <Login />,
+    },
+    {
+      path: "/",
+      element: <LandingPage />,
+    },
+  ]);
+
   return <RouterProvider router={router} />;
 }
 
